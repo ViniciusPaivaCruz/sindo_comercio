@@ -1,0 +1,12 @@
+body{
+    background-color: #33A9E6;
+}
+h1, p{
+    text-align: center;
+    color: white;
+}
+
+p{
+    max-width: 300px;
+    margin: auto;
+}

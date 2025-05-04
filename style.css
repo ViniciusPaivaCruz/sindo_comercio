@@ -1,0 +1,559 @@
+/* Reset */
+* {
+    max-width: 1072px;
+    margin: auto;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1072px;
+  }
+
+/*Nav*/
+/* Estilos para a transparência do menu */
+  .login_png{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: 20px;
+  }
+
+  #menu{
+    background-color: #393a6e;
+    width: 1032px;
+    height: 60px;
+    cursor: pointer;
+  }
+
+  #menu .lista_menu{
+    width: 400px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 50px;
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none; 
+    color: inherit; 
+    background: none; 
+    border: none; 
+  }
+
+
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #3C3D91; 
+    color: #000;
+    overflow: hidden;
+    position: relative;
+    max-width: 1072px;
+  }
+
+  .curva{
+    margin-left: -20px;
+
+    }
+
+  .curva .header-logo{
+    margin-left: 90px;
+  }
+
+  .curva .header-logo h1 {
+    color: #3C3D91; 
+    font-size: 2rem;
+    z-index: 99;
+  }
+  
+  .curva .header-logo p {
+    font-size: 19.2px;
+    color: #3C3D91;
+    z-index: 99;
+    position: relative;
+  }
+
+/*IMG*/  
+.header-image .Trabalhador{
+    max-width: 350px;
+    margin-top: -27%;
+    margin-left: 15%;
+    position: absolute;
+    height: auto;
+    width: 300px;
+    animation: animation_img 3s ease-in-out;
+    z-index: 99;
+  }
+
+  @keyframes animation_img{
+    from{
+        margin-top: -7%;
+    }
+
+    to{
+        margin-top: -27%;
+    }
+}
+
+  .curva .header-logo .t2{
+    color: rgb(53, 175, 239);
+    position: relative;
+    margin-top: -51px;
+    margin-left: 105px;
+  }
+
+
+  
+  /* About Section */
+  .about {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    margin-top: 220px;
+  }
+  
+  .about-text {
+    flex: 1;
+    padding-right: 20px;
+    margin-left: 0px;
+  }
+  
+  .about-text h2 {
+    font-size: 1.7rem;
+    color: #4B4C9A; 
+    text-align: center;
+    font-weight: bold;
+  }
+  .about-text h3{
+    color: #33A9E6;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    color: #4B4C9A; 
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .about-text ul {
+    margin-top: 20px;
+    list-style: disc;
+    padding-left: 20px;
+    color: #4B4C9A; 
+    font-weight: bold;
+    width: 500px;
+
+  }
+  .about-text h2,
+  .about-text p,
+  .about-text li {
+    text-transform: uppercase; /* Aplica letras maiúsculas */
+  }
+
+
+  .about-image{
+    border-radius: 70%;
+    width: 360px;
+    height: 332px;
+    overflow: hidden;
+    margin-left: 100px;
+  }
+  
+  .about-image img {
+    max-width: 420px;
+    height: auto;
+    position: relative;
+    left: -40px;
+    top: 10px;
+  }
+  .circulo_roxo{
+    width: 250px;
+    height: 250px;
+    left: 153px;
+    margin-top: 80px;
+    border-radius: 50%;
+    background-color: #4B4C9A;
+    position: absolute;
+  }
+
+
+  
+  /* Benefits Section */
+  .benefits {
+    margin-top: 140px;
+    background: #33A9E6;
+    padding: 40px;
+    text-align: center;
+    height: 600px;
+    max-width: 1072px;
+    width: 1024px;
+    overflow: hidden;
+  }
+  .benefits h2, h3{
+    color: white;
+  }
+  
+.card-wrapper {
+    overflow: hidden; 
+    width: 100%;
+}
+
+  .card-list{
+    gap: 15px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .card-list .card-item{
+    list-style: none;
+    width: calc(100% / 3); 
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .card-list .card-item .card-link{
+    width: 300px;
+    display: block;
+    background-color: #fff;
+    color: black;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-top: 40px;
+    border: 3px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+  }
+  .card-list .card-item .card-link:hover{
+    border-color: #4B4C9A;
+  }
+
+  .card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .card-list .card-link .badge{
+    color: #4B4C9A;
+    background-color: #adadcc;
+    margin: 16px 0 18px;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    width: fit-content;
+    border-radius: 50px;
+  }
+
+  .card-list .card-link .card-title{
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+  }
+
+ .next{
+    width: 60px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #4B4C9A;
+    font-size: 30px;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    margin-top: 20px;
+    transition: 0.4s ease;
+    cursor: pointer;
+  }
+  .back{
+    width: 60px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #4B4C9A;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    margin-top: 20px;
+    transition: 0.4s ease;
+    cursor: pointer;
+  }
+
+  .card-list .card-link:hover .next{
+    background-color: #4B4C9A;
+    color: white;
+  }
+  
+  .card p {
+    margin-top: 10px;
+  }
+
+
+
+  
+  /* News Section */
+  .news {
+    padding: 40px;
+    text-align: center;
+    margin-top: 160px;
+  }
+  
+  .news h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3C3D91; 
+    margin-top: -40px;
+  }
+  
+  .news-carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+  }
+  
+  .news-carousel img {
+    max-width: 200px;
+    height: auto;
+  }
+  
+ /* Define o contêiner principal do carrossel */
+.news-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden; /* Oculta as imagens que saem da área visível */
+}
+
+/* Define o wrapper das imagens, que será movido horizontalmente */
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease; /* Suaviza a transição ao mover */
+}
+
+/* Estilo das imagens */
+.news-carousel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Botões de navegação */
+.news-carousel .prev,
+.news-carousel .prox {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.news-carousel .prev {
+  left: 10px;
+}
+
+.news-carousel .prox {
+  right: 10px;
+}
+
+/* Adiciona interatividade com hover */
+.news-carousel .prev:hover,
+.news-carousel .prox:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/*contato sincomerciario*/
+.contato_sincomerciario{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 190px;
+}
+.contato_sincomerciario h1{
+  color:#3C3D91;
+  font-size: 30px;
+}
+.contato_sincomerciario h2{
+  color:#3C3D91;
+}
+.contato_sincomerciario h3{
+  color:#33A9E6;
+}
+.contato_sincomerciario h4{
+  color:#33A9E6;
+}
+
+
+
+  /* Footer */
+  .contact {
+    width: 100%;
+    height: 250px;
+    background: #3C3D91; 
+    color: white;
+    padding: 20px;
+    margin-top: 200px;
+  }
+  
+  .contact .instagram_logo{
+    margin-top: 130px;
+    margin-left: 70px;
+  }
+  
+  p{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  .contact_p{
+    margin-left: -170px;
+  }
+
+  .container1{
+    display: flex;
+    gap: 86px;
+    margin-left: 60%;
+  }
+  .container1 div{
+    font-size: 15px;
+    margin-top: -140px;
+  }
+  .container1 p{
+    position: absolute;
+    font-size: 12px;
+  }
+
+  .info1{
+    position: absolute;
+    margin-top: -31px;
+    margin-left: 22px;
+  }
+  .info2{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 24px;
+  }
+  .info3{
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 27px;
+  }
+  
+  .container1 .ytb_img{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -31px;
+  }
+
+
+  a{
+    color: white;
+  }
+
+  .redes1{
+    width: 130px;
+  }
+
+  .www1_div{
+    margin-left: -50px;
+  }
+
+.curva {
+    width: 1700px;
+    height: 500px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 3),#4B4C9A); 
+    color: white;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    z-index: 1;
+}
+
+.curva::before,
+.curva::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 16.5%;
+    top: -70%;
+    width: 135%;
+    height: 150%;
+    border-radius: 10% 100% 2% 10%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.curva::before {
+    transform: translateX(-50%) translateY(60%);
+}
+
+.curva::after {
+    transform: translateX(-50%) translateY(40%);
+    background-color: #fff; 
+    z-index: 1;
+}
+
+.curva h1 {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 1024px) {
+    /*IMG*/  
+    .header-image .Trabalhador{
+        max-width: 350px;
+        margin-top: -27%;
+        margin-left: 20%;
+        position: absolute;
+        height: auto;
+        width: 270px;
+        animation: animation_img 3s ease-in-out;
+        z-index: 99;
+    }
+
+    .header{
+      background: linear-gradient(to top, rgba(255, 255, 255, 3),#4B4C9A); 
+    }
+    .curva{
+        margin-left: -350px;
+        }
+
+    .logo_icon{
+        width: 40px;
+        height: 20px;
+        margin-right: 50px;
+    }
+    
+    .curva .header-logo{
+        margin-left: -150px;
+        margin-top: 150px;
+      }
+}
+
+
